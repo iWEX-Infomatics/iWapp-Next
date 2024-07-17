@@ -1,0 +1,136 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-17 10:45:24.036954",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "mobile_app_settings_section",
+  "validate_location",
+  "checkin_location",
+  "column_break_x3nwm",
+  "checkin_image",
+  "checkin_task",
+  "column_break_3xgmv",
+  "odometer_reading",
+  "submit_timesheet",
+  "column_break_mjjes",
+  "total_app_users",
+  "update_users",
+  "eligible_employees_section",
+  "employee_app_users",
+  "section_break_tqjso",
+  "firebase_server_key"
+ ],
+ "fields": [
+  {
+   "fieldname": "mobile_app_settings_section",
+   "fieldtype": "Section Break",
+   "label": "Mobile App Settings"
+  },
+  {
+   "default": "0",
+   "fieldname": "validate_location",
+   "fieldtype": "Check",
+   "label": "Validate Location"
+  },
+  {
+   "default": "0",
+   "fieldname": "checkin_location",
+   "fieldtype": "Check",
+   "label": "Checkin Location"
+  },
+  {
+   "fieldname": "column_break_x3nwm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "checkin_image",
+   "fieldtype": "Check",
+   "label": "Checkin Image"
+  },
+  {
+   "default": "0",
+   "fieldname": "checkin_task",
+   "fieldtype": "Check",
+   "label": "Checkin Task"
+  },
+  {
+   "fieldname": "column_break_3xgmv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "odometer_reading",
+   "fieldtype": "Check",
+   "label": "Odometer Reading"
+  },
+  {
+   "default": "0",
+   "fieldname": "submit_timesheet",
+   "fieldtype": "Check",
+   "label": "Submit Timesheet"
+  },
+  {
+   "fieldname": "column_break_mjjes",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_app_users",
+   "fieldtype": "Int",
+   "label": "Total App Users"
+  },
+  {
+   "fieldname": "update_users",
+   "fieldtype": "Button",
+   "label": "Update Users"
+  },
+  {
+   "fieldname": "eligible_employees_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "employee_app_users",
+   "fieldtype": "Table",
+   "label": "Employee App Users",
+   "options": "Employee App Users"
+  },
+  {
+   "fieldname": "section_break_tqjso",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "firebase_server_key",
+   "fieldtype": "Small Text",
+   "label": "Firebase Server Key"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-07-17 10:45:24.036954",
+ "modified_by": "Administrator",
+ "module": "iWapp-Next",
+ "name": "Employee App Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -27,7 +27,7 @@ app_license = "MIT"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-# doctype_js = {"doctype" : "public/js/doctype.js"}
+doctype_js = {"Employee" : "public/js/employee.js"}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -213,3 +213,27 @@ app_license = "MIT"
 # auth_hooks = [
 # 	"iwapp_next.auth.validate"
 # ]
+fixtures = [{
+    "dt":"Custom Field",
+    "filters": [
+        ["name", "in", (
+            "Employee-custom_user_api_secret", "Employee-custom_user_api_key"
+            )]
+    ]
+    },
+    # {"dt":"Property Setter",
+    #     "filters": [
+    #         ["doc_type", "in", (
+    #             "Employee Checkin",
+    #             "Leave Application",
+    #             "Employee",
+    #         )]
+    #     ]
+    # }
+    # {
+    #     "dt": "Translation",
+    #     "filters": [
+    #             ["name", "in", ("ec0adfc6e5")]
+    #     ],
+    # }
+]

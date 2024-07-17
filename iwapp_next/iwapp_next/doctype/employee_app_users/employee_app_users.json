@@ -1,0 +1,132 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-17 10:45:14.838938",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_id",
+  "employee_name",
+  "column_break_nvmce",
+  "user_id",
+  "company",
+  "column_break_hsop7",
+  "user_api_key",
+  "user_api_secret",
+  "section_break_dpdqi",
+  "home_location_circle",
+  "last_mac_id",
+  "column_break_ozejs",
+  "last_pinged_on",
+  "duration"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Link",
+   "label": "Employee ID",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "employee_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee Name",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_nvmce",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "user_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "User ID",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Company",
+   "no_copy": 1,
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_hsop7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "user_api_key",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "User API Key"
+  },
+  {
+   "columns": 2,
+   "fieldname": "user_api_secret",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "User API Secret"
+  },
+  {
+   "fieldname": "section_break_dpdqi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "250",
+   "fieldname": "home_location_circle",
+   "fieldtype": "Int",
+   "label": "Home Location Circle",
+   "length": 4,
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "last_mac_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Last Mac ID"
+  },
+  {
+   "fieldname": "column_break_ozejs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "last_pinged_on",
+   "fieldtype": "Datetime",
+   "label": "Last Pinged on"
+  },
+  {
+   "columns": 1,
+   "fieldname": "duration",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Duration"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-17 10:45:14.838938",
+ "modified_by": "Administrator",
+ "module": "iWapp-Next",
+ "name": "Employee App Users",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
