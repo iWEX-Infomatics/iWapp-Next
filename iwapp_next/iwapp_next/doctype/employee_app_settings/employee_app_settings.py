@@ -6,6 +6,10 @@ from frappe.model.document import Document
 
 class EmployeeAppSettings(Document):
 	pass
+	def before_save(self):
+		if self.employee_app_users:
+			self.total_app_users = len(self.employee_app_users)
+
 @frappe.whitelist()
 def get_user_id_details():
 	user_details = frappe.db.sql("""

@@ -81,7 +81,8 @@
   {
    "fieldname": "total_app_users",
    "fieldtype": "Int",
-   "label": "Total App Users"
+   "label": "Total App Users",
+   "read_only": 1
   },
   {
    "fieldname": "update_users",
@@ -112,7 +113,7 @@
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2024-07-17 10:45:24.036954",
+ "modified": "2024-07-18 18:50:50.815974",
  "modified_by": "Administrator",
  "module": "iWapp-Next",
  "name": "Employee App Settings",

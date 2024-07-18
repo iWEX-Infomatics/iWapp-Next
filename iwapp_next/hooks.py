@@ -27,7 +27,7 @@ app_license = "MIT"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-doctype_js = {"Employee" : "public/js/employee.js"}
+doctype_js = {"Employee" : "public/js/employee.js", "User" : "public/js/user.js"}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -116,13 +116,15 @@ doctype_js = {"Employee" : "public/js/employee.js"}
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+	"User": {
+		"before_save": "iwapp_next.events.user.before_save",
+        "on_update": "iwapp_next.events.user.on_update"
+	},
+    "Employee": {
+        "before_insert":"iwapp_next.events.employee.before_insert",
+    }
+}
 
 # Scheduled Tasks
 # ---------------
@@ -217,7 +219,7 @@ fixtures = [{
     "dt":"Custom Field",
     "filters": [
         ["name", "in", (
-            "Employee-custom_user_api_secret", "Employee-custom_user_api_key"
+            "Employee-custom_user_api_secret", "Employee-custom_beneficiary_name"
             )]
     ]
     },
