@@ -28,7 +28,7 @@ app_license = "MIT"
 
 # include js in doctype views
 doctype_js = {"Employee" : "public/js/employee.js", "User" : "public/js/user.js"}
-# doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
+doctype_list_js = {"Expense Claim" : "public/js/expense_claim_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 
@@ -219,7 +219,7 @@ fixtures = [{
     "dt":"Custom Field",
     "filters": [
         ["name", "in", (
-            "Employee-custom_user_api_secret", "Employee-custom_beneficiary_name"
+            "Employee-custom_user_api_secret", "Employee-custom_beneficiary_name", "Employee-custom_last_pinged_on"
             )]
     ]
     },

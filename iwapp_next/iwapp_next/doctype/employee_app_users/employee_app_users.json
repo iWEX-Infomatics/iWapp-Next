@@ -71,14 +71,16 @@
    "fieldname": "user_api_key",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "User API Key"
+   "label": "User API Key",
+   "read_only": 1
   },
   {
    "columns": 2,
    "fieldname": "user_api_secret",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "User API Secret"
+   "label": "User API Secret",
+   "read_only": 1
   },
   {
    "fieldname": "section_break_dpdqi",
@@ -98,7 +100,8 @@
    "fieldname": "last_mac_id",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Last Mac ID"
+   "label": "Last Mac ID",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_ozejs",
@@ -107,20 +110,22 @@
   {
    "fieldname": "last_pinged_on",
    "fieldtype": "Datetime",
-   "label": "Last Pinged on"
+   "label": "Last Pinged on",
+   "read_only": 1
   },
   {
    "columns": 1,
    "fieldname": "duration",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Duration"
+   "label": "Duration",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-07-17 10:45:14.838938",
+ "modified": "2024-07-21 18:55:50.666639",
  "modified_by": "Administrator",
  "module": "iWapp-Next",
  "name": "Employee App Users",

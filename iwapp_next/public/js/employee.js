@@ -7,7 +7,9 @@ frappe.ui.form.on("Employee", {
                     args:{
                         "employee_id":frm.doc.name,
                         "api_secret":frm.doc.custom_user_api_secret,
-                        "user_id":frm.doc.user_id
+                        "user_id":frm.doc.user_id,
+                        "mac_id":frm.doc.attendance_device_id,
+                        "last_pinged":frm.doc.custom_last_pinged_on
                     },
                     callback:function(r){
                     }

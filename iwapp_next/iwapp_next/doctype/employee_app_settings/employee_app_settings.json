@@ -10,15 +10,17 @@
   "mobile_app_settings_section",
   "validate_location",
   "checkin_location",
+  "app_version",
   "column_break_x3nwm",
   "checkin_image",
   "checkin_task",
+  "total_app_users",
   "column_break_3xgmv",
   "odometer_reading",
   "submit_timesheet",
-  "column_break_mjjes",
-  "total_app_users",
   "update_users",
+  "column_break_jwaqt",
+  "expense_claiming_days",
   "eligible_employees_section",
   "employee_app_users",
   "section_break_tqjso",
@@ -75,10 +77,6 @@
    "label": "Submit Timesheet"
   },
   {
-   "fieldname": "column_break_mjjes",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "total_app_users",
    "fieldtype": "Int",
    "label": "Total App Users",
@@ -107,13 +105,28 @@
    "fieldname": "firebase_server_key",
    "fieldtype": "Small Text",
    "label": "Firebase Server Key"
+  },
+  {
+   "fieldname": "column_break_jwaqt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "expense_claiming_days",
+   "fieldtype": "Table MultiSelect",
+   "label": "Expense Claiming Days",
+   "options": "Employee App Day Child"
+  },
+  {
+   "fieldname": "app_version",
+   "fieldtype": "Data",
+   "label": "App Version"
   }
  ],
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2024-07-18 18:50:50.815974",
+ "modified": "2024-07-21 18:20:17.627658",
  "modified_by": "Administrator",
  "module": "iWapp-Next",
  "name": "Employee App Settings",

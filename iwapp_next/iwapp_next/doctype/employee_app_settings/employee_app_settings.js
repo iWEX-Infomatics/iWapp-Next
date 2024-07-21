@@ -16,7 +16,9 @@ frappe.ui.form.on('Employee App Settings', {
 						child.employee_name = emp.employee_id
 						child.user_id = emp.user_id
 						child.user_api_key = emp.user_key
-						child.user_api_secret = emp.api_secret
+						child.user_api_secret = emp.api_secret,
+						child.last_mac_id = emp.mac_id,
+						child.last_pinged_on = emp.last_pinged
 						frm.refresh_fields("employee_app_users");
 					})
 					frm.save()
