@@ -123,29 +123,30 @@ doc_events = {
 	},
     "Employee": {
         "before_insert":"iwapp_next.events.employee.before_insert",
+        # "before_save":"iwapp_next.events.employee.before_save",
     }
 }
 
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"iwapp_next.tasks.all"
-# 	],
+scheduler_events = {
+	# "all": [
+	# 	"iwapp_next.events.employee.hourly_employee_app_schedular"
+	# ],
 # 	"daily": [
 # 		"iwapp_next.tasks.daily"
 # 	],
-# 	"hourly": [
-# 		"iwapp_next.tasks.hourly"
-# 	],
+	"hourly": [
+		"iwapp_next.events.employee.hourly_employee_app_schedular"
+	],
 # 	"weekly": [
 # 		"iwapp_next.tasks.weekly"
 # 	],
 # 	"monthly": [
 # 		"iwapp_next.tasks.monthly"
 # 	],
-# }
+}
 
 # Testing
 # -------
@@ -223,6 +224,9 @@ fixtures = [{
             )]
     ]
     },
+    {"dt":"Week Days",
+	  "filters": [["name", "in", ['All', 'Sat', 'Fri', 'Thu', 'Tue', 'Wed', 'Mon', 'Sun']]]
+	}
     # {"dt":"Property Setter",
     #     "filters": [
     #         ["doc_type", "in", (
