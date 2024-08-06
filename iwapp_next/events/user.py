@@ -4,7 +4,7 @@ from frappe import _
 
 def before_save(doc, method):
     if doc.role_profile_name:
-        designation = frappe.db.get_value("Employee", {"user_id":doc.name}, "designation")
+        designation = frappe.db.get_value("Employee", {"user_id":doc.name, "status" : "Active"}, "designation")
         if designation:
             if doc.role_profile_name != designation:
                 frappe.throw(_("The <b>Role Profile</b> you selected is not matching with the <b>Designation</b> of the Employee."))
