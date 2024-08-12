@@ -220,7 +220,8 @@ fixtures = [{
     "dt":"Custom Field",
     "filters": [
         ["name", "in", (
-            "Employee-custom_user_api_secret", "Employee-custom_beneficiary_name", "Employee-custom_last_pinged_on"
+            "Employee-custom_user_api_secret", "Employee-custom_beneficiary_name", "Employee-custom_last_pinged_on",
+            "Employee-custom_work_site"
             )]
     ]
     },

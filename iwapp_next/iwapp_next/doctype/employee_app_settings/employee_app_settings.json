@@ -16,8 +16,9 @@
   "checkin_task",
   "total_app_users",
   "column_break_3xgmv",
-  "odometer_reading",
   "submit_timesheet",
+  "odometer_reading",
+  "work_site_required",
   "update_users",
   "column_break_jwaqt",
   "expense_claiming_days",
@@ -120,13 +121,19 @@
    "fieldname": "app_version",
    "fieldtype": "Data",
    "label": "App Version"
+  },
+  {
+   "default": "0",
+   "fieldname": "work_site_required",
+   "fieldtype": "Check",
+   "label": "Work Site Required"
   }
  ],
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2024-07-21 18:20:17.627658",
+ "modified": "2024-08-12 16:02:49.929924",
  "modified_by": "Administrator",
  "module": "iWapp-Next",
  "name": "Employee App Settings",
