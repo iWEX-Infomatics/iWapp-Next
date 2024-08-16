@@ -7,13 +7,6 @@
   "name": "Sun"
  },
  {
-  "day": "Mon",
-  "docstatus": 0,
-  "doctype": "Week Days",
-  "modified": "2024-07-21 12:08:20.275097",
-  "name": "Mon"
- },
- {
   "day": "Wed",
   "docstatus": 0,
   "doctype": "Week Days",
@@ -28,20 +21,6 @@
   "name": "Tue"
  },
  {
-  "day": "Thu",
-  "docstatus": 0,
-  "doctype": "Week Days",
-  "modified": "2024-07-21 12:09:47.096736",
-  "name": "Thu"
- },
- {
-  "day": "Fri",
-  "docstatus": 0,
-  "doctype": "Week Days",
-  "modified": "2024-07-21 12:09:56.604832",
-  "name": "Fri"
- },
- {
   "day": "Sat",
   "docstatus": 0,
   "doctype": "Week Days",
@@ -54,5 +33,26 @@
   "doctype": "Week Days",
   "modified": "2024-07-21 15:26:16.619929",
   "name": "All"
+ },
+ {
+  "day": "Mon",
+  "docstatus": 0,
+  "doctype": "Week Days",
+  "modified": "2024-07-21 12:08:20.275097",
+  "name": "Mon"
+ },
+ {
+  "day": "Thu",
+  "docstatus": 0,
+  "doctype": "Week Days",
+  "modified": "2024-07-21 12:09:47.096736",
+  "name": "Thu"
+ },
+ {
+  "day": "Fri",
+  "docstatus": 0,
+  "doctype": "Week Days",
+  "modified": "2024-07-21 12:09:56.604832",
+  "name": "Fri"
  }
 ]
