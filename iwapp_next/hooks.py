@@ -237,7 +237,7 @@ fixtures = [{
     {"dt":"Property Setter",
         "filters": [
             ["doc_type", "in", (
-                "Employee Checkin",
+                "Employee Checkin"
             )]
         ]
     },
