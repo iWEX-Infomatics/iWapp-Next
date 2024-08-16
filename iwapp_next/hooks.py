@@ -27,7 +27,8 @@ app_license = "MIT"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-doctype_js = {"Employee" : "public/js/employee.js", "User" : "public/js/user.js"}
+doctype_js = {"Employee" : "public/js/employee.js", "User" : "public/js/user.js",
+              "Employee Checkin" : "public/js/employee_checkin.js",}
 doctype_list_js = {"Expense Claim" : "public/js/expense_claim_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -124,7 +125,13 @@ doc_events = {
     "Employee": {
         "before_insert":"iwapp_next.events.employee.before_insert",
         # "before_save":"iwapp_next.events.employee.before_save",
-    }
+    },
+     "Expense Claim": {
+        "before_insert": "iwapp_next.events.expense_claim.after_insert",
+    },
+     "Employee Checkin": {
+        "before_save": "iwapp_next.events.employee_checkin.before_save",
+    },
 }
 
 # Scheduled Tasks
@@ -219,24 +226,21 @@ scheduler_events = {
 fixtures = [{
     "dt":"Custom Field",
     "filters": [
-        ["name", "in", (
-            "Employee-custom_user_api_secret", "Employee-custom_beneficiary_name", "Employee-custom_last_pinged_on",
-            "Employee-custom_work_site"
+        ["dt", "in", (
+            "Employee", "Employee Checkin",
             )]
     ]
     },
     {"dt":"Week Days",
 	  "filters": [["name", "in", ['All', 'Sat', 'Fri', 'Thu', 'Tue', 'Wed', 'Mon', 'Sun']]]
-	}
-    # {"dt":"Property Setter",
-    #     "filters": [
-    #         ["doc_type", "in", (
-    #             "Employee Checkin",
-    #             "Leave Application",
-    #             "Employee",
-    #         )]
-    #     ]
-    # }
+	},
+    {"dt":"Property Setter",
+        "filters": [
+            ["doc_type", "in", (
+                "Employee Checkin",
+            )]
+        ]
+    },
     # {
     #     "dt": "Translation",
     #     "filters": [
