@@ -132,6 +132,10 @@ doc_events = {
      "Employee Checkin": {
         "before_save": "iwapp_next.events.employee_checkin.before_save",
     },
+    "Timesheet": {
+        "on_update": "iwapp_next.events.timesheet.after_insert",
+        "after_delete": "iwapp_next.events.timesheet.after_delete",
+    },
 }
 
 # Scheduled Tasks
@@ -229,7 +233,8 @@ fixtures = [{
         ["dt", "in", (
             "Employee",
             "Employee Checkin",
-            "Opportunity"
+            "Opportunity",
+            "Task"
             )]
     ]
     },
